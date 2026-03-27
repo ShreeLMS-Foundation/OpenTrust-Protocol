@@ -64,7 +64,7 @@ Governments seeking trust frameworks
 OpenTrust Protocol is released under the MIT License
 (free to use, modify, and extend with attribution)
 
+## 🧩 Problem-Solving Policy (ShreeLMS Foundation)
 
-## 📜 Open Source Policy for shreelms.in
+See `SHREELMS_PROBLEM_SOLVING_POLICY.md` for the official ShreeLMS Foundation framework for issue triage, root-cause analysis, SLAs, and transparent incident resolution.
 
-See `SHREELMS_OPEN_SOURCE_POLICY.md` for the Linux-inspired, community-first governance and contribution framework.
