@@ -25,10 +25,24 @@ AI-Safe-Use-Standard/
 ├── README.md
 ├── POLICY.md
 ├── RULES.md
+├── RULES/
+│   ├── RULE-01-LEGAL-COMPLIANCE.md
+│   ├── RULE-02-PRIVACY-PROTECTION.md
+│   ├── RULE-03-HARM-PREVENTION.md
+│   ├── RULE-04-RESPONSIBLE-USE.md
+│   └── RULE-05-TRANSPARENCY.md
+├── CONTRIBUTING.md
+├── GOVERNANCE.md
 ├── IMPLEMENTATION/
+│   ├── config.py
 │   ├── filter.py
+│   ├── risk.py
+│   ├── logging_policy.py
+│   ├── pipeline.py
 │   └── validator.py
 └── examples/
+    ├── README.md
+    └── sample_requests.json
 ```
 
 ## Quick Start
@@ -36,3 +50,7 @@ AI-Safe-Use-Standard/
 ```bash
 python AI-Safe-Use-Standard/IMPLEMENTATION/validator.py
 ```
+
+## Rulebook
+
+Use the separated rules in `RULES/` for policy governance and audits.

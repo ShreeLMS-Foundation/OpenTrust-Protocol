@@ -8,23 +8,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-BANNED_INPUT_KEYWORDS = {
-    "hack",
-    "steal",
-    "attack",
-    "ddos",
-    "malware",
-    "ransomware",
-    "phishing",
-    "carding",
-    "data theft",
-}
-
-BANNED_OUTPUT_KEYWORDS = {
-    "how to hack",
-    "bypass law",
-    "illegal exploit",
-}
+from config import BANNED_INPUT_KEYWORDS, BANNED_OUTPUT_KEYWORDS, SAFE_MODE_PATTERNS
 
 
 @dataclass(frozen=True)
@@ -45,7 +29,7 @@ def check_input(text: str, safe_mode: bool = True) -> FilterResult:
             return FilterResult(False, f"blocked_input_keyword:{keyword}")
 
     # In safe mode, reject explicit suspicious intent patterns.
-    if safe_mode and any(token in cleaned for token in ("bypass", "evade", "undetected")):
+    if safe_mode and any(token in cleaned for token in SAFE_MODE_PATTERNS):
         return FilterResult(False, "blocked_safe_mode_pattern")
 
     return FilterResult(True, "allowed")

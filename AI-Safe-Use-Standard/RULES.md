@@ -1,24 +1,19 @@
-# AISUS Rules and Controls
+# AISUS Rules and Controls (Overview)
 
-## Input Filtering
-- Reject clearly malicious requests.
-- Flag ambiguous risky requests for additional review.
-- Normalize text before scanning (lowercase, trim, punctuation handling).
+This overview maps to the detailed rule files in `RULES/`.
 
-## Output Filtering
-- Prevent disclosure of sensitive personal data.
-- Refuse dangerous instructions.
-- Replace unsafe content with a policy-safe response.
+## Separated Rule Files
+- RULE-01 Legal Compliance → `RULES/RULE-01-LEGAL-COMPLIANCE.md`
+- RULE-02 Privacy Protection → `RULES/RULE-02-PRIVACY-PROTECTION.md`
+- RULE-03 Harm Prevention → `RULES/RULE-03-HARM-PREVENTION.md`
+- RULE-04 Responsible Use → `RULES/RULE-04-RESPONSIBLE-USE.md`
+- RULE-05 Transparency → `RULES/RULE-05-TRANSPARENCY.md`
 
-## Safe Mode
-- In safe mode, any high-risk pattern triggers immediate refusal.
-- In normal mode, medium-risk may trigger clarification questions.
+## Operational Controls
+- Input filtering for malicious intent.
+- Output filtering for prohibited unsafe content.
+- Safe mode for stricter refusals.
+- Risk scoring: LOW / MEDIUM / HIGH.
+- Privacy-aware event logging.
 
-## Risk Scoring
-- LOW: benign queries.
-- MEDIUM: borderline or dual-use content.
-- HIGH: explicit illegal, harmful, or abusive intent.
-
-## Auditability
-- Keep lightweight security logs for blocked high-risk requests.
-- Do not store raw personal data in logs.
+For implementation details, see `IMPLEMENTATION/`.
