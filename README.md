@@ -63,3 +63,8 @@ Governments seeking trust frameworks
 
 OpenTrust Protocol is released under the MIT License
 (free to use, modify, and extend with attribution)
+
+## 🚀 AI Safe Use Standard (AISUS)
+
+See `AI-Safe-Use-Standard/` for a practical standard and reference implementation to reduce illegal, harmful, and unsafe AI usage through policy, filtering, and risk scoring.
+
