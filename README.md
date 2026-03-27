@@ -64,7 +64,7 @@ Governments seeking trust frameworks
 OpenTrust Protocol is released under the MIT License
 (free to use, modify, and extend with attribution)
 
-## 🧩 Problem-Solving Policy (ShreeLMS Foundation)
+## 🚀 AI Safe Use Standard (AISUS)
 
-See `SHREELMS_PROBLEM_SOLVING_POLICY.md` for the official ShreeLMS Foundation framework for issue triage, root-cause analysis, SLAs, and transparent incident resolution.
+See `AI-Safe-Use-Standard/` for a practical standard and reference implementation to reduce illegal, harmful, and unsafe AI usage through policy, filtering, and risk scoring.
 
